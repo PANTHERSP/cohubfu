@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "COMEW",
-    "slug": "COMEW",
+    "name": "CoHubFU",
+    "slug": "CoHubFU",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./App/assets/logo.png",
     "userInterfaceStyle": "light",
+    "googleMapsApiKey": "AIzaSyBZdHmnOqUzC85ZsCPz1IX89JDeoCpyfPY",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./App/assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,12 +20,28 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./App/assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow EWENT to access your location."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow EWENT to access your photos.",
+          "cameraPermission": "Allow EWENT to access your camera."
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
